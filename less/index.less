@@ -66,7 +66,8 @@ html, body {
 
 // general
 .container{
-	.flexit_row_nw()
+	.flexit_row_nw();
+	justify-content: space-between;
 }
 // Header
 header{
@@ -79,14 +80,14 @@ header{
 		.flexit_center();
 		.flexit_row_nw();
 		justify-content: space-around;
-		width: 90%;
+		width: 95%;
 		text-align: center;
 		.header_text{
 			color:  #FAFAFA;
 		}
 		h1{
 			.margin1rem();
-			font-size: 3.7rem;
+			font-size: 4rem;
 		}
 		h2{
 			.margin1rem();
@@ -113,6 +114,15 @@ header{
 			}
 		}
 	}
+		}
+	@media(min-width: 600px){
+		.header_wrapper{
+			.header_text{
+				h1{
+					font-size: 6rem;
+				}
+			}
+		}
 }
 section{
 	background-color: #FAFAFA;
@@ -120,13 +130,28 @@ section{
 	.flexit_center();
 	.topic{
 		.flexit_center();
+		.flexit_row_nw();
+		width: 90%;
+		margin: 3rem auto;
 		h3{
-			font-size: 3rem;
+			font-size: 3.5rem;
+		}
+		h4{
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+		p{
+			font-size: 1.5rem;
 		}
 	}
 }
 footer{
 	background-color: #474747;
+	width: auto;
+	.flexit_center();
+	a{
+		font-size: 2rem;
+	}
 }
 // mixings
 .flexit_center(){
